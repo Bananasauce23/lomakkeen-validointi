@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <title>Rekisteröitymislomake</title>
+</head>
+<body>
+    <h1>Rekisteröitymislomake</h1>
+    <div>
+    <form>
+        <label id="ohje">Siirry kentästä toiseen tab-näppäimellä.</label><br>
+        <label id="otsikko">Käyttäjä ID:</label>
+        <input type="text" id="kayttajaID">
+        <span id="virheID"></span><br>
+
+        <label id="otsikko">Salasana:</label>
+        <input type="text" id="salasana">
+        <span id="virheSalasana"></span><br>
+
+        <label id="otsikko">Nimi:</label>
+        <input type="text" id="nimi">
+        <span id="virheNimi"></span><br>
+
+        <label id="otsikko">Osoite:</label>
+        <input type="text" id="osoite">
+        <span id="virheOsoite"></span><br>
+
+        <label id="otsikko">Maa:</label>
+        <select name="maa" id="maa">
+            <option value="valitse">(Valitse maa)</option>
+            <option value="suomi">Suomi</option>
+            <option value="ruotsi">Ruotsi</option>
+        </select>
+        <span id="virheMaa"></span><br>
+
+        <label id="otsikko">Postinumero:</label>
+        <input type="text" id="postinumero">
+        <span id="virhePosti"></span><br>
+
+        <label id="otsikko">Sähköposti:</label>
+        <input type="text" id="sahkoposti">
+        <span id="virheSposti"></span><br>
+
+        <label id="otsikko">Sukupuoli:</label>
+        <input type="radio" id="mies" name="sukupuoli" value="mies">
+        <label for="mies">Mies</label>
+        <input type="radio" id="nainen" name="sukupuoli" value="nainen">
+        <label for="nainen">Nainen</label>
+        <input type="radio" id="muu" name="sukupuoli" value="muu">
+        <label for="muu">Muu</label>
+        <span id="virheSukupuoli"></span><br>
+
+        <label id="otsikko">Kieli:</label>
+        <input type="checkbox" id="kieli1" name="kieli" value="Suomi">
+        <label for="kieli1">Suomi</label>
+        <input type="checkbox" id="kieli2" name="kieli" value="Muu">
+        <label for="kieli2">Muu kuin suomi</label>
+        <span id="virheKieli"></span><br>
+
+        <label id="otsikko">Lisätietoja:</label>
+        <textarea></textarea><br>
+        <input type="submit" id="laheta" value="Lähetä">
+    </form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

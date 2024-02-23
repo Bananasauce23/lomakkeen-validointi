@@ -1,0 +1,45 @@
+:root{
+    --bg: #EBEBD3;
+    --teksti: #39393A;
+}
+
+h1{
+    font-family: "Spectral", serif;
+}
+
+body{
+    background-color: var(--bg);
+    font-family: "Karla", sans-serif;
+    font-weight: 600;
+    color: var(--teksti);
+}
+
+#ohje{
+    font-weight: bold;
+    display: block;
+}
+
+span{
+    color: red;
+    margin-left: 10px;
+}
+
+input, select, textarea{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+#otsikko{
+    width: 100px;
+    float: left;
+    text-align: right;
+}
+
+input:not([type]), input[type="submit"]{
+    margin-left: 250px;
+}
+
+textarea {
+    width: 400px;
+    height: 100px;
+   }
